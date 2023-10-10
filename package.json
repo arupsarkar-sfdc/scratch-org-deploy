@@ -4,7 +4,7 @@
     "description": "An application that will deploy an SFDX project from a public  Github repo",
     "main": "lib/processes/web.js",
     "engines": {
-        "node": "18.x"
+        "node": "14.x"
       }, 
     "scripts": {
         "build": "yarn build:client && yarn build:server",
