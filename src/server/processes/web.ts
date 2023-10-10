@@ -41,8 +41,9 @@ function wrapAsync(fn: any) {
 }
 
 const commonDeploy = async (req, url: string) => {
+    console.log('commonDeploy', req.body, req.query, req.params);
     const message: DeployRequest = await deployMsgBuilder(req);
-
+    console.log('message 1', message);
     if (message.visitor && !message.noPool) {
         message.visitor.pageview(url).send();
         message.visitor.event('Repo', getPoolKey(message, '-')).send();
@@ -57,7 +58,7 @@ const commonDeploy = async (req, url: string) => {
             })
         )
     ]);
-
+    console.log('message 2', message);
     return message;
 };
 
