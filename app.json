@@ -1,5 +1,5 @@
 {
-    "name": "SFDX Public Deployer",
+    "name": "Scratch Org Deployer",
     "description": "An application that will deploy an SFDX project from a public Github repo",
     "repository": "https://github.com/arupsarkar-sfdc/scratch-org-deploy#main",
     "keywords": ["deploy", "sfdx", "salesforcedx"],
